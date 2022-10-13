@@ -12,6 +12,9 @@ export function App() {
   const [recommendationList, setRecommendationList] = useState([]);
 
   useEffect(() => {
+    console.log("USE EFFECT !");
+  }, []);
+  useEffect(() => {
     fetchPopulars();
   }, []);
 
